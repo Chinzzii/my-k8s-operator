@@ -1,0 +1,9 @@
+apiVersion: kubernetes.chinzzii.com/v1
+kind: StaticPage
+metadata:
+  name: staticpage-example
+  namespace: default
+spec:
+  contents: 'Hello, world!'
+  image: nginx:latest
+  replicas: 1
