@@ -1,7 +1,7 @@
 apiVersion: kubernetes.chinzzii.com/v1
 kind: StaticPage
 metadata:
-  name: staticpage-example
+  name: example
   namespace: default
 spec:
   contents: 'Hello, world!'

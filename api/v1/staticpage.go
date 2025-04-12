@@ -6,6 +6,13 @@ import (
 	"k8s.io/apimachinery/pkg/runtime/schema"
 )
 
+/*
+TypeMeta describes an individual object in an API response or request with strings representing the type of the object and its API schema version.
+Structures that are versioned or persisted should inline TypeMeta.
+
+ListMeta describes metadata that synthetic resources must have, including lists and various status objects.
+*/
+
 type StaticPageList struct {
 	metav1.TypeMeta `json:",inline"`
 	metav1.ListMeta `json:"metadata,omitempty"`
