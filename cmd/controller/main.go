@@ -7,7 +7,7 @@ import (
 	"os"
 	"path/filepath"
 
-	chinzziiv1 "github.com/Chinzzii/my-k8s-operator/api/v1"
+	chinzziiv1 "github.com/Chinzzii/smooth-k8s-operator/api/v1"
 
 	appsv1 "k8s.io/api/apps/v1"
 	corev1 "k8s.io/api/core/v1"

@@ -1,4 +1,4 @@
-module github.com/Chinzzii/my-k8s-operator
+module github.com/Chinzzii/smooth-k8s-operator
 
 go 1.23.5
 
