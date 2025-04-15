@@ -1,10 +1,6 @@
 package v1
 
-import (
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"k8s.io/apimachinery/pkg/runtime"
-	"k8s.io/apimachinery/pkg/runtime/schema"
-)
+import metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
 /*
 TypeMeta describes an individual object in an API response or request with strings representing the type of the object and its API schema version.
@@ -18,17 +14,6 @@ type StaticPageList struct {
 	metav1.ListMeta `json:"metadata,omitempty"`
 
 	Items []StaticPage `json:"items"`
-}
-
-// DeepCopyObject implements runtime.Object.
-func (in *StaticPageList) DeepCopyObject() runtime.Object {
-	panic("unimplemented")
-}
-
-// GetObjectKind implements runtime.Object.
-// Subtle: this method shadows the method (TypeMeta).GetObjectKind of StaticPageList.TypeMeta.
-func (in *StaticPageList) GetObjectKind() schema.ObjectKind {
-	panic("unimplemented")
 }
 
 type StaticPage struct {

@@ -7,9 +7,9 @@ func (in *StaticPage) DeepCopyInto(out *StaticPage) {
 	out.TypeMeta = in.TypeMeta
 	out.ObjectMeta = in.ObjectMeta
 	out.Spec = StaticPageSpec{
-		Contents: in.Spec.Contents,
-		Image:    in.Spec.Image,
 		Replicas: in.Spec.Replicas,
+		Image:    in.Spec.Image,
+		Contents: in.Spec.Contents,
 	}
 }
 
@@ -22,7 +22,7 @@ func (in *StaticPage) DeepCopyObject() runtime.Object {
 }
 
 // DeepCopyObject returns a generically typed copy of the receiver.
-func (in *StaticPageList) DeepCopyInto() runtime.Object {
+func (in *StaticPageList) DeepCopyObject() runtime.Object {
 	out := StaticPageList{}
 	out.TypeMeta = in.TypeMeta
 	out.ListMeta = in.ListMeta
