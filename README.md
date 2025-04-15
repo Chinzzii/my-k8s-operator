@@ -87,3 +87,7 @@ Check the logs to verify that the operator is correctly reconciling the `StaticP
 
 - **Future Enhancements:**
   You might consider adding support for additional fields in the CRD, more advanced reconciliation logic, custom events, or metrics.
+
+## Credits
+This project was inspired by [Edward Viaenek
+](https://www.youtube.com/@EdwardViaene)’s excellent Kubernetes Operator tutorial. Huge thanks for the clear and insightful content!
